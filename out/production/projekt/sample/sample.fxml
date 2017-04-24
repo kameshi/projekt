@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" maxHeight="500.0" maxWidth="840.0" prefHeight="500.0" prefWidth="840.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <HBox prefHeight="500.0" prefWidth="840.0" GridPane.columnIndex="1" GridPane.columnSpan="2" />
+      <VBox prefHeight="200.0" prefWidth="400.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefWidth="200.0" text="Pojemność:" />
+                  <TextField prefWidth="150.0" />
+                  <Label text="cm3" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefWidth="200.0" text="Moc:" />
+                  <TextField prefWidth="150.0" />
+                  <Label text="KM" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefWidth="200.0" text="Waga:" />
+                  <TextField prefWidth="150.0" />
+                  <Label text="kg" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefWidth="200.0" text="Maksymalna prędkość:" />
+                  <TextField prefWidth="150.0" />
+                  <Label text="km/h" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefWidth="200.0" text="Szerokość ogumienia:" />
+                  <TextField prefWidth="150.0" />
+                  <Label text="mm" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefWidth="200.0" text="Srednia pręgkość wiatru:" />
+                  <TextField prefWidth="150.0" />
+                  <Label text="km/h" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefWidth="200.0" text="Temperatura nawierzchni:" />
+                  <TextField prefWidth="150.0" />
+                  <Label text="*C" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefWidth="200.0" text="Rodzaj ogumienia:" />
+                  <ChoiceBox prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefWidth="200.0" text="Warunki atmosferyczne:" />
+                  <ChoiceBox prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefWidth="200.0" text="Rodzaj nawierzchni" />
+                  <ChoiceBox prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Symuluj" textAlignment="CENTER" />
+                  <Button mnemonicParsing="false" text="Zapisz" />
+                  <Button mnemonicParsing="false" text="Zakończ" />
+               </children>
+            </HBox>
+         </children></VBox>
+      <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+         <image>
+            <Image url="@../../mapa.gif" />
+         </image>
+      </ImageView>
+   </children>
+</GridPane>
