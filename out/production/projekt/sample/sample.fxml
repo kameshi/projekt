@@ -29,75 +29,75 @@
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <Label prefWidth="200.0" text="Pojemność:" />
-                        <TextField fx:id="pojemnoscT" prefWidth="150.0" />
+                        <TextField prefWidth="150.0" />
                         <Label text="cm3" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <Label prefWidth="200.0" text="Moc:" />
-                        <TextField fx:id="mocT" prefWidth="150.0" />
+                        <TextField prefWidth="150.0" />
                         <Label text="KM" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <Label prefWidth="200.0" text="Waga:" />
-                        <TextField fx:id="wagaT" prefWidth="150.0" />
+                        <TextField prefWidth="150.0" />
                         <Label text="kg" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <Label prefWidth="200.0" text="Maksymalna prędkość:" />
-                        <TextField fx:id="maksymalnaPT" prefWidth="150.0" />
+                        <TextField prefWidth="150.0" />
                         <Label text="km/h" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <Label prefWidth="200.0" text="Szerokość ogumienia:" />
-                        <TextField fx:id="szerokooscOT" prefWidth="150.0" />
+                        <TextField prefWidth="150.0" />
                         <Label text="mm" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <Label prefWidth="200.0" text="Srednia pręgkość wiatru:" />
-                        <TextField fx:id="sredniaPWT" prefWidth="150.0" />
+                        <TextField prefWidth="150.0" />
                         <Label text="km/h" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <Label prefWidth="200.0" text="Temperatura nawierzchni:" />
-                        <TextField fx:id="temperaturaNT" prefWidth="150.0" />
+                        <TextField prefWidth="150.0" />
                         <Label text="*C" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <Label prefWidth="200.0" text="Rodzaj ogumienia:" />
-                        <ChoiceBox fx:id="rodzajOChB" prefWidth="150.0" />
+                        <ChoiceBox fx:id="chekBoxOgumienie" prefWidth="150.0" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <Label prefWidth="200.0" text="Warunki atmosferyczne:" />
-                        <ChoiceBox fx:id="warunkiAChB" prefWidth="150.0" />
+                        <ChoiceBox prefWidth="150.0" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <Label prefWidth="200.0" text="Rodzaj nawierzchni" />
-                        <ChoiceBox fx:id="rodzajNChB" prefWidth="150.0" />
+                        <ChoiceBox prefWidth="150.0" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="symulujB" mnemonicParsing="false" onAction="#symulujOnA" text="Symuluj" textAlignment="CENTER" />
-                        <Button fx:id="zapiszB" mnemonicParsing="false" onAction="#zapiszOnA" text="Zapisz" />
-                        <Button fx:id="zakonczB" mnemonicParsing="false" onAction="#zakonczOnA" text="Zakończ" />
+                        <Button mnemonicParsing="false" text="Symuluj" textAlignment="CENTER" />
+                        <Button mnemonicParsing="false" text="Zapisz" />
+                        <Button mnemonicParsing="false" text="Zakończ" />
                      </children>
                   </HBox>
                </children>
