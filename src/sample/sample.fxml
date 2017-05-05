@@ -29,7 +29,7 @@
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <Label prefWidth="200.0" text="Pojemność:" />
-                        <TextField fx:id="pojemnoscT" prefWidth="150.0" />
+                        <TextField fx:id="pojemnoscT" onInputMethodTextChanged="#pojemnoscOnA" onKeyReleased="#pojemnoscOnA" prefWidth="150.0" />
                         <Label text="cm3" />
                      </children>
                   </HBox>

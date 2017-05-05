@@ -2,12 +2,15 @@ package sample;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
+import javafx.scene.control.TextFormatter;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.UnaryOperator;
 
 public class Controller {
 
@@ -28,11 +31,13 @@ public class Controller {
     @FXML
     protected ChoiceBox<String> rodzajOChB;
     @FXML
-    protected ChoiceBox warunkiAChB;
+    protected ChoiceBox<String> warunkiAChB;
     @FXML
-    protected ChoiceBox rodzajNChB;
+    protected ChoiceBox<String> rodzajNChB;
 
-    private String[] dane = new String[9];
+    private TextField[] field = {pojemnoscT, mocT, wagaT, maksymalnaPT, szerokooscOT, sredniaPWT, temperaturaNT};
+
+    Obsluga obsluga = new Obsluga();
 
     @FXML
     public void initialize() {
@@ -57,19 +62,36 @@ public class Controller {
         rodzajNL.add("trawnik");
         rodzajNChB.setItems(rodzajNL);
 
+        UnaryOperator<TextFormatter.Change> filter = change -> {
+            String text = change.getText();
+
+            if (text.matches("[0-9]*+[.]*")) {
+                return change;
+            }
+
+            return null;
+        };
+        TextFormatter<String> textFormatter = new TextFormatter<>(filter);
+        for(int i = 0; i < 7; i++)
+        {
+            //field[i].setTextFormatter(textFormatter);
+        }
     }
 
     @FXML
     protected void symulujOnA()
     {
-        dane[0] = pojemnoscT.getText();
-        dane[1] = mocT.getText();
-        dane[2] = wagaT.getText();
-        dane[3] = maksymalnaPT.getText();
-        dane[4] = szerokooscOT.getText();
-        dane[5] = sredniaPWT.getText();
-        dane[6] = temperaturaNT.getText();
-
+        System.out.println(field[0].getText());
+        obsluga.dodajDane(0,pojemnoscT.getText());
+        obsluga.dodajDane(1,mocT.getText());
+        obsluga.dodajDane(2,wagaT.getText());
+        obsluga.dodajDane(3,maksymalnaPT.getText());
+        obsluga.dodajDane(4,szerokooscOT.getText());
+        obsluga.dodajDane(5,sredniaPWT.getText());
+        obsluga.dodajDane(6,temperaturaNT.getText());
+        obsluga.dodajDane(7,rodzajOChB.getValue());
+        obsluga.dodajDane(8,warunkiAChB.getValue());
+        obsluga.dodajDane(9,rodzajNChB.getValue());
     }
 
     @FXML
@@ -82,5 +104,8 @@ public class Controller {
     protected  void zakonczOnA()
     {
 
+    }
+
+    public void pojemnoscOnA() {
     }
 }
